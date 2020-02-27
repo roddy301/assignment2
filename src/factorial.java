@@ -4,7 +4,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.math.BigInteger;
 
-public class fibonacci {
+public class factorial {
     public static void main(String args[]) throws IOException {
         int Number;
         FileReader file = null;
