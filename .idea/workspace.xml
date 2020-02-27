@@ -43,7 +43,7 @@
   </component>
   <component name="RunManager">
     <configuration name="fibonacci" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="fibonacci" />
+      <option name="MAIN_CLASS_NAME" value="factorial" />
       <module name="factorial" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -73,7 +73,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
