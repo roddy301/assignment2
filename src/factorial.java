@@ -1,19 +1,14 @@
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.math.BigInteger;
+import java.net.URL;
 
 public class factorial {
     public static void main(String args[]) throws IOException {
         int Number;
         FileReader file = null;
-        try {
-            file = new  FileReader("input.txt");
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-        BufferedReader bufferedReader = new BufferedReader(file);
+        URL url = new URL("https://raw.githubusercontent.com/roddy301/factorial/master/src/input.txt");
+        BufferedReader bufferedReader = new BufferedReader(
+                new InputStreamReader(url.openStream()));
 
         String line = bufferedReader.readLine();
         while(line!=null){
