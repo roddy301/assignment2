@@ -1,11 +1,12 @@
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.math.BigInteger;
 import java.net.URL;
 
 public class factorial {
     public static void main(String args[]) throws IOException {
         int Number;
-        FileReader file = null;
         URL url = new URL("https://raw.githubusercontent.com/roddy301/assignment2/master/input.txt");
         BufferedReader bufferedReader = new BufferedReader(
                 new InputStreamReader(url.openStream()));
