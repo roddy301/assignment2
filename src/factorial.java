@@ -29,9 +29,9 @@ public class factorial {
             long end = System.nanoTime();
             long diff = end - start;
 
-            System.out.print("Request ID: "+j+"      ");
-            System.out.print("Factorial of "+Number+": "+answer);
-            System.out.println("     Time taken in nanoseconds: "+diff);
+            System.out.print(j+",");
+            System.out.print(answer+",");
+            System.out.println(diff);
             line = bufferedReader.readLine();
             j++;
         }

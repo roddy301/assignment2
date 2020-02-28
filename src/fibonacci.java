@@ -17,22 +17,23 @@ public class fibonacci {
             BigInteger Next;
 
             Number = Integer.parseInt(line);
-            System.out.print("Request ID: "+j+"      ");
-            System.out.print("Fibonacci of "+Number+": ");
+            System.out.print(j+",");
             long start = System.nanoTime();
+            System.out.print("\"");
             for(int i = 0; i <= Number; i++) {
                 if (i <= 1) {
-                    System.out.print(i+", ");
+                    System.out.print(i+"-");
                 } else {
                     Next = First_Value.add(Second_Value);
                     First_Value = Second_Value;
                     Second_Value = Next;
-                    System.out.print(Next + ", ");
+                    System.out.print(Next + "-");
                 }
             }
+            System.out.print("\",");
             long end = System.nanoTime();
             long diff = end - start;
-            System.out.println("     Time taken in nanoseconds: "+diff);
+            System.out.println(diff);
             line = bufferedReader.readLine();
             j++;
         }
