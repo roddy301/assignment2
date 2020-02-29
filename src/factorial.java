@@ -13,6 +13,7 @@ public class factorial {
 
         String line = bufferedReader.readLine();
         int j = 1;
+        System.out.println("\"Request ID\",\"Number\",\"Factorial\",\"Time in Nano Seconds\"");
         while(line!=null){
             Number = Integer.parseInt(line);
             BigInteger answer = BigInteger.valueOf(1);
@@ -30,7 +31,8 @@ public class factorial {
             long diff = end - start;
 
             System.out.print(j+",");
-            System.out.print(answer+",");
+            System.out.print(Number+",");
+            System.out.print("\""+answer+"\",");
             System.out.println(diff);
             line = bufferedReader.readLine();
             j++;

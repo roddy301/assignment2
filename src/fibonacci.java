@@ -10,6 +10,7 @@ public class fibonacci {
 
         String line = bufferedReader.readLine() ;
         int j = 1;
+
         while(line != null){
             int Number;
             BigInteger First_Value = BigInteger.valueOf(0);
@@ -19,6 +20,7 @@ public class fibonacci {
             Number = Integer.parseInt(line);
             System.out.print(j+",");
             long start = System.nanoTime();
+            System.out.print(Number+",");
             System.out.print("\"");
             for(int i = 0; i <= Number; i++) {
                 if (i <= 1) {
